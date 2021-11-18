@@ -16,7 +16,7 @@ class Countries extends Component {
     }
 
     loadCountries() {
-        fetch("http://api.openweathermap.org/data/2.5/weather?q=Kstovo&units=metric&lang=ru&appid=c2642913fe4f051eac6de607f2f48a47").then(
+        fetch("http://api.openweathermap.org/data/2.5/weather?q=Kstovo&units=metric&lang=ru&appid=c264291f2f48a47").then(
             response => response.json()
         ).then(
             result => {
