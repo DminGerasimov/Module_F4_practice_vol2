@@ -1,0 +1,20 @@
+*.lnk
+
+# Environments
+venv/
+
+#Python backend
+.vs/
+cookbook/cookbook/__pycache__/
+cookbook/cookbook/__init__.py
+cookbook/recipe/__pycache__/
+cookbook/recipe/__init__.py
+cookbook/recipe/migrations/__pycache__/
+cookbook/recipe/migrations/__init__.py
+
+
+#JS frontend
+jscookbook/.vs/
+jscookbook/bin/
+jscookbook/node_modules/
+jscookbook/obj/
