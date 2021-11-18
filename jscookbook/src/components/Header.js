@@ -8,8 +8,8 @@ class Header extends Component {
         return (
             <header>
                 <nav>
-                    <Link to="/">Home  </Link><div>|</div>
-                    <Link to="/Recipes">Recipes</Link>
+                    <Link to="/">Home</Link><div>|</div>
+                    <Link to="/Categories">Categories</Link>
                 </nav>
             </header>
         );

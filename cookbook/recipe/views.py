@@ -3,8 +3,8 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from django_filters.rest_framework import DjangoFilterBackend
 
-from .models import Recipe
-from .serializer import RecipesSerializer
+from .models import Recipe, Category
+from .serializer import RecipesSerializer, CategoriesSerializer
 
 class RecipeView(ListAPIView):
     queryset = Recipe.objects.all()
@@ -14,3 +14,8 @@ class RecipeView(ListAPIView):
 class SingleRecipeView(RetrieveAPIView):
     queryset = Recipe.objects.all()
     serializer_class = RecipesSerializer
+
+class CategoriesView(ListAPIView):
+    queryset = Category.objects.all()
+    serializer_class = CategoriesSerializer
+
